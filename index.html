@@ -9,19 +9,37 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
         <title>Eden</title>
     </head>
 
     <body>
-        <main class="congrats">
+        <main class="congrats" id="main_eight">
             <section class="congrats-main">
                 <img src="./assets/congrats_star.svg" alt="">
                 <h1>Your Eden profile has been completed, Aderinsola!</h1>
                 <p>You're one step closer to starting your easy life with Eden.</p>
             </section>
-            <button class="congrats-btn">
+            <button class="congrats-btn" id="progress">
                 Go Home
             </button>
+        </main>
+        <main class="hide" id="main_nine">
+            <header>
+                <div class="nav-top">
+                    <img src="./assets/burgar.svg" alt="">
+                    <h1>Hi, Aderinsola!</h1>
+                    <div class="profile-icon">
+                        <img src="./assets/profile-icon.svg" alt="">
+                    </div>
+                </div>
+                <nav>
+                    <ul class="nav-links-top">
+                        <li class="active">Home</li>
+                        <li>Upcoming</li>
+                    </ul>
+                </nav>
+            </header>
         </main>
         <script src="./main.js"></script>
     </body>

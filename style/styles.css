@@ -18,7 +18,7 @@ video {
   max-width: 100%;
 }
 body,
-main {
+.congrats {
   min-height: 100vh;
 }
 
@@ -27,7 +27,11 @@ main {
   src: url('../fonts/Cerebri.Sans.Pro/CerebriSansPro-Regular.otf');
   font-weight: normal;
 }
-
+@font-face {
+  font-family: 'Cerebri Sans';
+  src: url('../fonts/Cerebri.Sans.Pro/CerebriSansPro-Medium.otf');
+  font-weight: 500;
+}
 
 /* Utilities */
 .flex {
@@ -35,6 +39,9 @@ main {
 }
 .grid {
   display: grid;
+}
+.hide {
+  display: none !important;
 }
 
 :root {
@@ -60,6 +67,7 @@ main {
 body {
   padding: 0 var(--xs_page);
   background-color: white;
+  font-family: 'Cerebri Sans';
 }
 .congrats {
   text-align: center;
@@ -69,8 +77,8 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
-.congrats-main{
-    margin-top: -150px;
+.congrats-main {
+  margin-top: -150px;
 }
 .congrats-main > img {
   margin: 0 auto 20px auto;
@@ -101,5 +109,54 @@ body {
   bottom: 82px;
   left: 0;
   color: white;
-  font-family: 'Cerebri Sans';;
+  font-family: 'Cerebri Sans';
+}
+
+.nav-top {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.nav-top h1 {
+  margin-left: 16px;
+  font-size: 18px;
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+}
+.nav-top > div:last-child {
+  margin-left: auto;
+}
+.profile-icon {
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: #fff3df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links-top {
+    list-style: none;
+    display: flex;
+    background-color: var(--greys_septenary);
+    column-gap: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.nav-links-top > li {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--greys_primary);
+}
+.nav-links-top > li.active {
+    color: var(--greys_tertiary);
+    background-color: white;
+    font-weight: 500;
+    padding: 6px 0;
+    border-radius: 5px;
 }
