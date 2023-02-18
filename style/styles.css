@@ -176,28 +176,30 @@ body {
   padding: 4px;
   border-radius: 5px;
   margin-top: 26px;
+  max-width: 500px;
+  margin: 26px auto 0 auto;
 }
 .nav-links-top > li {
-    width: 50%;
-    display: grid;
-    place-items: center;
-    font-weight: normal;
-    font-size: 14px;
-    color: var(--greys_primary);
+  width: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--greys_primary);
 }
 .nav-links-top > li.active {
-    color: var(--greys_tertiary);
-    background-color: white;
-    font-weight: 500;
-    padding: 6px 0;
-    border-radius: 5px;
+  color: var(--greys_tertiary);
+  background-color: white;
+  font-weight: 500;
+  padding: 6px 0;
+  border-radius: 5px;
 }
 header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: white;
-    padding: 0 0 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  padding: 0 0 10px 0;
 }
 
 /* Eden Main */
@@ -220,6 +222,8 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  position: relative;
+  z-index: 10;
 }
 .eden-main img {
   position: absolute;
@@ -313,6 +317,21 @@ header {
 }
 
 @media (min-width: 640px) {
+  .nav-top img:first-child {
+    display: none;
+  }
+
+  .nav-path {
+    position: static;
+  }
+  .nav-path ul li {
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+  }
+  .eden-main {
+    padding: 40px;
+  }
   .services {
     grid-template-columns: repeat(2, auto);
   }
