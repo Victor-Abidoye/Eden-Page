@@ -8,9 +8,9 @@ const eight = document.querySelector('#main_eight')
 const nine = document.querySelector('#main_nine')
 const homeBtn = document.querySelector('#progress')
 
-homeBtn.addEventListener('click', () => progess())
-
-const progess = () => {
+const progress = () => {
     eight.classList.add('hide')
     nine.classList.remove('hide')
 }
+
+homeBtn.addEventListener('click', progress)

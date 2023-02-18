@@ -52,6 +52,7 @@ body,
   --greys_tertiary: #4b6358;
   --greys_septenary: #f0f4f2;
   --green_primary: #03a84e;
+  --green_quaternary: #98DCAF;
   --green_tertiary: #03a84e;
   --orange_primary: #ff9d00;
   --orange_tertiary: #ffc260;
@@ -143,7 +144,7 @@ body {
     column-gap: 4px;
     padding: 4px;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 26px 0;
 }
 .nav-links-top > li {
     width: 50%;
@@ -159,4 +160,31 @@ body {
     font-weight: 500;
     padding: 6px 0;
     border-radius: 5px;
+}
+
+/* Eden Main */
+.eden-main {
+    background-color: var(--green_primary);
+    border: 4px solid var(--green_quaternary);
+    border-radius: 8px;
+    padding: 22px 16px;
+    color: white;
+    position: relative;
+    margin: 24px 0;
+}
+.eden-main h2 {
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.eden-main p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.eden-main img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
