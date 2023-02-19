@@ -36,6 +36,11 @@ body,
   src: url('../fonts/Cerebri.Sans.Pro/CerebriSansPro-Medium.otf');
   font-weight: 500;
 }
+@font-face {
+  font-family: 'Cerebri Sans';
+  src: url('../fonts/Cerebri.Sans.Pro/CerebriSansPro-Bold.otf');
+  font-weight: bold;
+}
 
 /* Utilities */
 .flex {
@@ -75,10 +80,12 @@ body,
 }
 
 body {
-  padding: 0 var(--xs_page);
   background-color: white;
   font-family: 'Cerebri Sans';
   position: relative;
+}
+main {
+  padding: 0 var(--xs_page);
 }
 .congrats {
   text-align: center;
@@ -88,9 +95,7 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
-.congrats-main {
-  margin-top: -150px;
-}
+
 .congrats-main > img {
   margin: 0 auto 20px auto;
 }
@@ -116,7 +121,6 @@ body {
   font-size: 16px;
   border: 0px;
   background-color: var(--green_primary);
-  position: absolute;
   bottom: 82px;
   left: 0;
   color: white;
@@ -129,6 +133,7 @@ body {
   left: 0;
   width: 100%;
   background-color: white;
+  box-shadow: 0 -10px 10px -9px rgba(0%, 0%, 0%, 0.05);
 }
 .nav-path ul {
   padding: 11px var(--xs_page);
@@ -202,7 +207,9 @@ header {
   top: 0;
   z-index: 10;
   background-color: white;
-  padding: 0 0 10px 0;
+  /* padding: 0 0 10px 0; */
+  padding: 0 var(--xs_page);
+  box-shadow: 0 10px 4px -9px rgba(0%, 0%, 0%, 0.05);
 }
 
 /* Eden Main */
@@ -488,12 +495,46 @@ header {
     grid-template-columns: repeat(2, 1fr);
   }
   .service-card-top h3 {
-    font-size: 18px ;
+    font-size: 18px;
     line-height: 26px;
   }
-  .service-card-top button {
+  /* .service-card-top button {
     font-size: 16px;
     line-height: 22px;
+  } */
+}
+@media (min-width: 1024px) {
+  .nav-top img:first-child {
+    display: none;
+  }
+  .nav-top h1 {
+    font-size: 24px;
+    line-height: 32px;
   }
 
+  .nav-path {
+    position: static;
+  }
+  .nav-path ul li {
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .eden-main {
+    padding: 40px;
+  }
+  .eden-main h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-card-top h3 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+  }
 }
