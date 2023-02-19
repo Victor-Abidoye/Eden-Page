@@ -22,40 +22,43 @@
             </section>
             <button class="congrats-btn" id="progress">Go Home</button>
         </main>
-        <div  class="hide" id="main_nine">
+        <div class="hide" id="main_nine">
             <header>
                 <div class="nav-top">
                     <img src="./assets/burgar.svg" alt="" />
-                    <h1>Hi, Aderinsola!</h1>
+                    <nav class="nav-path">
+                        <ul>
+                            <li class="active">
+                                <img src="./assets/home.svg" alt="" /><span>Home</span>
+                            </li>
+                            <li>
+                                <img src="./assets/history.svg" alt="" /><span>History</span>
+                            </li>
+                            <li>
+                                <img src="./assets/notification.svg" alt="" /><span>Notifications</span>
+                            </li>
+                            <li>
+                                <img src="./assets/gardener.svg" alt="" /><span>Gardener</span>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h1 class="name">Hi, Aderinsola!</h1>
 
                     <div class="profile-icon">
                         <img src="./assets/profile-icon.svg" alt="" />
                     </div>
                 </div>
-                <nav class="nav-path">
-                    <ul>
-                        <li class="active">
-                            <img src="./assets/home.svg" alt="" /><span>Home</span>
-                        </li>
-                        <li>
-                            <img src="./assets/history.svg" alt="" /><span>History</span>
-                        </li>
-                        <li>
-                            <img src="./assets/notification.svg" alt="" /><span>Notifications</span>
-                        </li>
-                        <li>
-                            <img src="./assets/gardener.svg" alt="" /><span>Gardener</span>
-                        </li>
-                    </ul>
-                </nav>
             </header>
             <main>
-                <nav>
-                    <ul class="nav-links-top">
-                        <li class="active">Home</li>
-                        <li>Upcoming</li>
-                    </ul>
-                </nav>
+                <div class="tab">
+                    <h1 class="name">Hi, Aderinsola!</h1>
+                    <nav>
+                        <ul class="nav-links-top">
+                            <li class="active">Home</li>
+                            <li>Upcoming</li>
+                        </ul>
+                    </nav>
+                </div>
                 <section class="eden-main">
                     <h2>Tap here to call us</h2>
                     <p>
@@ -67,7 +70,10 @@
                 <div class="grid services">
                     <section class="delivery">
                         <div class="service-card-top">
-                            <h3>Food Delivery</h3>
+                            <div class="service-title">
+                                <h3>Food Delivery</h3>
+                                <img src="./assets/tiny-food.svg" alt="">
+                            </div>
                             <button onclick="toggleModal('food')">View Status </button>
                         </div>
                         <div>
@@ -84,7 +90,11 @@
                     </section>
                     <section class="cleaning">
                         <div class="service-card-top">
-                            <h3>Home Cleaning</h3>
+                            <div class="service-title">
+
+                                <h3>Home Cleaning</h3>
+                                <img src="./assets/tiny-house.svg" alt="">
+                            </div>
                             <button onclick="toggleModal('clean')">View Status ></button>
                         </div>
                         <div>

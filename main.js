@@ -9,7 +9,9 @@ const eight = document.querySelector('#main_eight')
 const nine = document.querySelector('#main_nine')
 const homeBtn = document.querySelector('#progress')
 const foodModal = document.querySelector('#food')
+const foodCard = document.querySelector('#food .card')
 const cleanModal = document.querySelector('#clean')
+const cleanCard = document.querySelector('#clean .card')
 
 const progress = () => {
     eight.classList.add('hide')
@@ -20,8 +22,11 @@ const progress = () => {
 const toggleModal = (item) => {
     if (item === 'food') {
         foodModal.classList.toggle('hide')
+        foodCard.classList.toggle('active-modal')
+
     } else if (item === 'clean') {
         cleanModal.classList.toggle('hide')
+        cleanCard.classList.toggle('active-modal')
     }
 }
 
