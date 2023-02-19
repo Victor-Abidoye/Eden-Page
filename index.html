@@ -59,7 +59,7 @@
                 <section class="delivery">
                     <div class="service-card-top">
                         <h3>Food Delivery</h3>
-                        <button>View Status ></button>
+                        <button onclick="toggleModal('food')">View Status ></button>
                     </div>
                     <div>
                         <img src="./assets/chicken-french-fries.svg" alt="">
@@ -76,7 +76,7 @@
                 <section class="cleaning">
                     <div class="service-card-top">
                         <h3>Home Cleaning</h3>
-                        <button>View Status ></button>
+                        <button onclick="toggleModal('clean')">View Status ></button>
                     </div>
                     <div>
                         <p>Get ready; our cleaner is coming to get your house pampered.</p>
@@ -88,14 +88,14 @@
                 </section>
             </div>
         </main>
-        <div class="back food">
+        <div class="back food hide" id="food">
             <div class="card">
                 <div class="card-action">
 
                     <p class="date">Mon, 08 Sep 2021</p>
-                    <div class="close">
+                    <button class="close"  onclick="toggleModal('food')"  >
                         <img src="./assets/cancel.svg" alt="">
-                    </div>
+                    </button>
                 </div>
                 <div class="card-header">
                     <img src="./assets/food.svg" alt="">
@@ -123,6 +123,63 @@
                         <h4 class="bold-primary">Order on the way <span class="bold-tertiary">10:56 AM</span> </h4>
                         <p class="stage-details mid-tertiary">Your order has been dispatched and is on the way to you.
                         </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="back clean hide" id="clean">
+            <div class="card">
+                <div class="card-action">
+
+                    <p class="date">Mon, 08 Sep 2021</p>
+                    <button class="close"  onclick="toggleModal('clean')" >
+                        <img src="./assets/cancel.svg" alt="">
+                    </button>
+                </div>
+                <div class="card-header">
+                    <img src="./assets/House.svg" alt="">
+                    <div>
+                        <h3 class="status bold-tertiary">Order Status</h3>
+                        <p class="oreder-status bold-primary">Cleaning completed</p>
+                    </div>
+                </div>
+                <div class="card-address">
+                    <h3 class="bold-tertiary">Cleaning Address</h3>
+                    <p class="mid-tertiary">No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+                </div>
+                <div class="card-address cleaner">
+                    <h3 class="bold-tertiary">Cleaner</h3>
+                    <p class="mid-tertiary">Kelechi Oguike</p>
+                </div>
+                <ul class="timeline">
+                    <li class="stage">
+                        <div>
+                            <img src="./assets/tick.svg" alt="">
+                        </div>
+                        <h4 class="bold-primary">Cleaning completed <span class="bold-tertiary">10:56 AM</span> </h4>
+                        <p class="stage-details mid-tertiary">Give feedback.
+                        </p>
+                    </li>
+                    <li class="stage">
+                        <div>
+                            <img src="./assets/tick.svg" alt="">
+                        </div>
+                        <h4 class="bold-primary">Cleaning started <span class="bold-tertiary">10:56 AM</span> </h4>
+                        <p class="stage-details mid-tertiary">Your cleaner has started cleaning.</p>
+                    </li>
+                    <li class="stage">
+                        <div>
+                            <img src="./assets/tick.svg" alt="">
+                        </div>
+                        <h4 class="bold-primary">Cleaner has arrived<span class="bold-tertiary">10:56 AM</span> </h4>
+                        <p class="stage-details mid-tertiary">Your cleaner has arrived at your location.</p>
+                    </li>
+                    <li class="stage">
+                        <div>
+                            <img src="./assets/tick.svg" alt="">
+                        </div>
+                        <h4 class="bold-primary">Cleaner en route <span class="bold-tertiary">10:56 AM</span> </h4>
+                        <p class="stage-details mid-tertiary">Your cleaner is on the way to your location!</p>
                     </li>
                 </ul>
             </div>
