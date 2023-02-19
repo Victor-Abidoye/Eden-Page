@@ -4,6 +4,7 @@
 *::after {
   box-sizing: border-box;
   font-family: 'Cerebri Sans';
+  scroll-behavior: smooth;
 }
 * {
   margin: 0;
@@ -329,8 +330,6 @@ header {
 }
 .card {
   background-color: white;
-  /* max-height: 500px;
-  overflow-y: scroll; */
   position: absolute;
   top: 50%;
   width: 90%;
@@ -396,6 +395,7 @@ header {
 }
 .timeline {
   max-height: 320px;
+  height: 100%;
   overflow-y: scroll;
   padding: 0 20px;
 }
@@ -458,6 +458,10 @@ header {
   .nav-top img:first-child {
     display: none;
   }
+  .nav-top h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
 
   .nav-path {
     position: static;
@@ -466,11 +470,30 @@ header {
     grid-template-columns: repeat(2, auto);
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
   }
   .eden-main {
     padding: 40px;
   }
-  .services {
-    grid-template-columns: repeat(2, auto);
+  .eden-main h2 {
+    font-size: 20px;
+    line-height: 26px;
   }
+  .eden-main p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-card-top h3 {
+    font-size: 18px ;
+    line-height: 26px;
+  }
+  .service-card-top button {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
 }

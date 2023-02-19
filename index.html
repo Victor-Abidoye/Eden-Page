@@ -2,45 +2,50 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style/styles.css">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./style/styles.css" />
         <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
         <title>Eden</title>
     </head>
 
     <body>
-        <main class="congrats hide" id="main_eight">
+        <main class="congrats" id="main_eight">
             <section class="congrats-main">
-                <img src="./assets/congrats_star.svg" alt="">
+                <img src="./assets/congrats_star.svg" alt="" />
                 <h1>Your Eden profile has been completed, Aderinsola!</h1>
                 <p>You're one step closer to starting your easy life with Eden.</p>
             </section>
-            <button class="congrats-btn" id="progress">
-                Go Home
-            </button>
+            <button class="congrats-btn" id="progress">Go Home</button>
         </main>
-        <main class="" id="main_nine">
+        <main class="hide" id="main_nine">
             <header>
                 <div class="nav-top">
-                    <img src="./assets/burgar.svg" alt="">
+                    <img src="./assets/burgar.svg" alt="" />
                     <h1>Hi, Aderinsola!</h1>
 
                     <div class="profile-icon">
-                        <img src="./assets/profile-icon.svg" alt="">
+                        <img src="./assets/profile-icon.svg" alt="" />
                     </div>
                 </div>
                 <nav class="nav-path">
                     <ul>
-                        <li class="active"><img src="./assets/home.svg" alt=""><span>Home</span></li>
-                        <li><img src="./assets/history.svg" alt=""><span>History</span></li>
-                        <li><img src="./assets/notification.svg" alt=""><span>Notifications</span></li>
-                        <li><img src="./assets/gardener.svg" alt=""><span>Gardener</span></li>
-
+                        <li class="active">
+                            <img src="./assets/home.svg" alt="" /><span>Home</span>
+                        </li>
+                        <li>
+                            <img src="./assets/history.svg" alt="" /><span>History</span>
+                        </li>
+                        <li>
+                            <img src="./assets/notification.svg" alt="" /><span>Notifications</span>
+                        </li>
+                        <li>
+                            <img src="./assets/gardener.svg" alt="" /><span>Gardener</span>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -52,8 +57,11 @@
             </nav>
             <section class="eden-main">
                 <h2>Tap here to call us</h2>
-                <p>Do you have any inquiry about your meals? You can simply tap to call us.</p>
-                <img src="./assets/eden-main.svg" alt="">
+                <p>
+                    Do you have any inquiry about your meals? You can simply tap to call
+                    us.
+                </p>
+                <img src="./assets/eden-main.svg" alt="" />
             </section>
             <div class="grid services">
                 <section class="delivery">
@@ -62,14 +70,14 @@
                         <button onclick="toggleModal('food')">View Status ></button>
                     </div>
                     <div>
-                        <img src="./assets/chicken-french-fries.svg" alt="">
+                        <img src="./assets/chicken-french-fries.svg" alt="" />
                         <div>
                             <h4>French Fries with</h4>
                             <p>BBQ Turkey Wings & Coleslaw</p>
                         </div>
                     </div>
                     <div class="time">
-                        <img src="./assets/clock.svg" alt="">
+                        <img src="./assets/clock.svg" alt="" />
                         <p>10:00 AM - 11:30 AM</p>
                     </div>
                 </section>
@@ -82,7 +90,7 @@
                         <p>Get ready; our cleaner is coming to get your house pampered.</p>
                     </div>
                     <div class="time">
-                        <img src="./assets/clock.svg" alt="">
+                        <img src="./assets/clock.svg" alt="" />
                         <p>10:00 AM - 11:30 AM</p>
                     </div>
                 </section>
@@ -91,14 +99,13 @@
         <div class="back food hide" id="food">
             <div class="card">
                 <div class="card-action">
-
                     <p class="date">Mon, 08 Sep 2021</p>
-                    <button class="close"  onclick="toggleModal('food')"  >
-                        <img src="./assets/cancel.svg" alt="">
+                    <button class="close" onclick="toggleModal('food')">
+                        <img src="./assets/cancel.svg" alt="" />
                     </button>
                 </div>
                 <div class="card-header">
-                    <img src="./assets/food.svg" alt="">
+                    <img src="./assets/food.svg" alt="" />
                     <div>
                         <h3 class="status bold-tertiary">Order Status</h3>
                         <p class="oreder-status bold-primary">Order has arrived</p>
@@ -106,22 +113,31 @@
                 </div>
                 <div class="card-address">
                     <h3 class="bold-tertiary">Delivery Address</h3>
-                    <p class="mid-tertiary">No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+                    <p class="mid-tertiary">
+                        No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.
+                    </p>
                 </div>
                 <ul class="timeline">
                     <li class="stage">
                         <div>
                             <div class="round"></div>
                         </div>
-                        <h4 class="bold-primary">Order has arrived <span class="bold-tertiary">10:56 AM</span> </h4>
-                        <p class="stage-details mid-tertiary">Your order has arrived at your location. Pick it up!</p>
+                        <h4 class="bold-primary">
+                            Order has arrived <span class="bold-tertiary">10:56 AM</span>
+                        </h4>
+                        <p class="stage-details mid-tertiary">
+                            Your order has arrived at your location. Pick it up!
+                        </p>
                     </li>
                     <li class="stage">
                         <div>
-                            <img src="./assets/tick.svg" alt="">
+                            <img src="./assets/tick.svg" alt="" />
                         </div>
-                        <h4 class="bold-primary">Order on the way <span class="bold-tertiary">10:56 AM</span> </h4>
-                        <p class="stage-details mid-tertiary">Your order has been dispatched and is on the way to you.
+                        <h4 class="bold-primary">
+                            Order on the way <span class="bold-tertiary">10:56 AM</span>
+                        </h4>
+                        <p class="stage-details mid-tertiary">
+                            Your order has been dispatched and is on the way to you.
                         </p>
                     </li>
                 </ul>
@@ -130,14 +146,13 @@
         <div class="back clean hide" id="clean">
             <div class="card">
                 <div class="card-action">
-
                     <p class="date">Mon, 08 Sep 2021</p>
-                    <button class="close"  onclick="toggleModal('clean')" >
-                        <img src="./assets/cancel.svg" alt="">
+                    <button class="close" onclick="toggleModal('clean')">
+                        <img src="./assets/cancel.svg" alt="" />
                     </button>
                 </div>
                 <div class="card-header">
-                    <img src="./assets/House.svg" alt="">
+                    <img src="./assets/House.svg" alt="" />
                     <div>
                         <h3 class="status bold-tertiary">Order Status</h3>
                         <p class="oreder-status bold-primary">Cleaning completed</p>
@@ -145,7 +160,9 @@
                 </div>
                 <div class="card-address">
                     <h3 class="bold-tertiary">Cleaning Address</h3>
-                    <p class="mid-tertiary">No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+                    <p class="mid-tertiary">
+                        No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.
+                    </p>
                 </div>
                 <div class="card-address cleaner">
                     <h3 class="bold-tertiary">Cleaner</h3>
@@ -154,32 +171,45 @@
                 <ul class="timeline">
                     <li class="stage">
                         <div>
-                            <img src="./assets/tick.svg" alt="">
+                            <img src="./assets/tick.svg" alt="" />
                         </div>
-                        <h4 class="bold-primary">Cleaning completed <span class="bold-tertiary">10:56 AM</span> </h4>
-                        <p class="stage-details mid-tertiary">Give feedback.
+                        <h4 class="bold-primary">
+                            Cleaning completed <span class="bold-tertiary">10:56 AM</span>
+                        </h4>
+                        <p class="stage-details mid-tertiary">Give feedback.</p>
+                    </li>
+                    <li class="stage">
+                        <div>
+                            <img src="./assets/tick.svg" alt="" />
+                        </div>
+                        <h4 class="bold-primary">
+                            Cleaning started <span class="bold-tertiary">10:56 AM</span>
+                        </h4>
+                        <p class="stage-details mid-tertiary">
+                            Your cleaner has started cleaning.
                         </p>
                     </li>
                     <li class="stage">
                         <div>
-                            <img src="./assets/tick.svg" alt="">
+                            <img src="./assets/tick.svg" alt="" />
                         </div>
-                        <h4 class="bold-primary">Cleaning started <span class="bold-tertiary">10:56 AM</span> </h4>
-                        <p class="stage-details mid-tertiary">Your cleaner has started cleaning.</p>
+                        <h4 class="bold-primary">
+                            Cleaner has arrived<span class="bold-tertiary">10:56 AM</span>
+                        </h4>
+                        <p class="stage-details mid-tertiary">
+                            Your cleaner has arrived at your location.
+                        </p>
                     </li>
                     <li class="stage">
                         <div>
-                            <img src="./assets/tick.svg" alt="">
+                            <img src="./assets/tick.svg" alt="" />
                         </div>
-                        <h4 class="bold-primary">Cleaner has arrived<span class="bold-tertiary">10:56 AM</span> </h4>
-                        <p class="stage-details mid-tertiary">Your cleaner has arrived at your location.</p>
-                    </li>
-                    <li class="stage">
-                        <div>
-                            <img src="./assets/tick.svg" alt="">
-                        </div>
-                        <h4 class="bold-primary">Cleaner en route <span class="bold-tertiary">10:56 AM</span> </h4>
-                        <p class="stage-details mid-tertiary">Your cleaner is on the way to your location!</p>
+                        <h4 class="bold-primary">
+                            Cleaner en route <span class="bold-tertiary">10:56 AM</span>
+                        </h4>
+                        <p class="stage-details mid-tertiary">
+                            Your cleaner is on the way to your location!
+                        </p>
                     </li>
                 </ul>
             </div>
