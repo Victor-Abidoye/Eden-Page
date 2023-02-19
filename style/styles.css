@@ -17,6 +17,9 @@ video {
   display: block;
   max-width: 100%;
 }
+ul {
+  list-style: none;
+}
 body,
 .congrats {
   min-height: 100vh;
@@ -127,7 +130,6 @@ body {
 }
 .nav-path ul {
   padding: 11px var(--xs_page);
-  list-style: none;
   display: flex;
   justify-content: space-between;
 }
@@ -168,7 +170,6 @@ body {
 }
 
 .nav-links-top {
-  list-style: none;
   display: flex;
   background-color: var(--greys_septenary);
   align-items: center;
@@ -314,6 +315,122 @@ header {
 .cleaning > div:nth-child(2) p {
   font-size: 14px;
   line-height: 20px;
+}
+/*  */
+
+/*Back*/
+.back {
+  background-color: rgba(0%, 0%, 0%, 0.5);
+  position: fixed;
+  backdrop-filter: blur(1px);
+  inset: 0;
+  z-index: 20;
+}
+.card {
+  background-color: white;
+  position: absolute;
+  bottom: 70px;
+  width: 90%;
+  left: 5%;
+  border-radius: 16px;
+  padding: 20px;
+}
+.card-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-action p {
+  color: var(--greys_tertiary);
+  font-size: 12px;
+  line-height: 16px;
+}
+.card-action .close {
+  width: 28px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: var(--greys_septenary);
+  display: grid;
+  place-items: center;
+}
+.card-header {
+  display: flex;
+  column-gap: 8px;
+  margin: 20px 0;
+}
+.card-header img {
+  width: 32px;
+}
+
+.bold-tertiary {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--greys_secondary);
+  font: 400;
+}
+.bold-primary {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--greys_primary);
+}
+.card-address {
+  border: 1px dashed var(--greys_quaternary);
+  padding: 12px;
+}
+
+.stage {
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 40px;
+  border-left: 1px dashed var(--green_tertiary);
+  position: relative;
+}
+.stage:first-child {
+  margin-top: 20px;
+}
+.timeline .stage:last-child {
+  border: none;
+}
+.round {
+  width: 16px;
+  aspect-ratio: 1/1;
+  background-color: var(--green_primary);
+  border-radius: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.round::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: white;
+}
+.stage > div {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+.stage > div::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: white;
+  z-index: -10;
+}
+.mid-tertiary {
+  font-size: 14px;
+  line-height: 20px;
+}
+.stage-details {
+  color: var(--greys_tertiary);
+}
+
+.stage h4 {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 640px) {
