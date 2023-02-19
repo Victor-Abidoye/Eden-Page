@@ -472,6 +472,8 @@ header {
 
   .nav-path {
     position: static;
+  box-shadow: none;
+
   }
   .nav-path ul li {
     grid-template-columns: repeat(2, auto);
