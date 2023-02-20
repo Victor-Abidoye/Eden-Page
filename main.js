@@ -1,9 +1,22 @@
+function randomInRange (min, max) {
+    return Math.random() * (max - min) + min;
+}
+var myCanvas = document.createElement('canvas');
+document.body.appendChild(myCanvas);
 
-const jsConfetti = new JSConfetti()
-jsConfetti.addConfetti({
-    confettiRadius: 6,
-    confettiNumber: 600,
-})
+var myConfetti = new confetti.create(myCanvas, {
+    resize: false,
+    useWorker: false
+});
+myConfetti({
+    angle: randomInRange(55, 125),
+    spread: randomInRange(50, 70),
+    particleCount: randomInRange(100, 500),
+    origin: { y: 0.7 }
+});
+
+confetti()
+
 
 const eight = document.querySelector('#main_eight')
 const nine = document.querySelector('#main_nine')
