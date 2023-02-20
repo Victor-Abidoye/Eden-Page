@@ -1,7 +1,3 @@
-function randomInRange (min, max) {
-    return Math.random() * (max - min) + min;
-}
-
 confetti({
     angle: 90,
     spread: 100,
